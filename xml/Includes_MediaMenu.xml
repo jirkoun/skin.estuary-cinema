@@ -136,13 +136,20 @@
 					<onclick>SendClick(28)</onclick>
 					<visible>Window.IsActive(MyPVRChannels.xml) | Window.IsActive(MyPVRGuide.xml)</visible>
 				</control>
-				<control type="radiobutton" id="6060">
+				<control type="button" id="6060"> <!-- MOD* -->
 					<include>MediaMenuItemsCommon</include>
-					<label>$LOCALIZE[31127]</label>
-					<selected>Control.IsVisible(50)</selected>
+					<label>Zobrazit</label>
+					<label2>[B]$VAR[MyPVRChannelsViewVar][/B]</label2>
 					<onclick>Container.NextViewMode</onclick>
 					<visible>Window.IsActive(MyPVRChannels.xml)</visible>
 				</control>
+				<!-- <control type="radiobutton" id="6060"> -->
+					<!-- <include>MediaMenuItemsCommon</include> -->
+					<!-- <label>$LOCALIZE[31127]</label> -->
+					<!-- <selected>Control.IsVisible(50)</selected> -->
+					<!-- <onclick>Container.NextViewMode</onclick> -->
+					<!-- <visible>Window.IsActive(MyPVRChannels.xml)</visible> -->
+				<!-- </control> -->
 				<control type="button" id="6053">
 					<include>MediaMenuItemsCommon</include>
 					<label>$LOCALIZE[31022]</label>

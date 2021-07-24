@@ -563,3 +563,105 @@ msgstr "Avatar profilu"
 msgctxt "#31167"
 msgid "Animate background"
 msgstr "Animovat pozadí"
+
+# MOD*
+
+msgctxt "#31300"
+msgid "Estuary Cinema"
+msgstr "Estuary Cinema"
+
+msgctxt "#31301"
+msgid "Stream Cinema Community"
+msgstr "Stream Cinema Community"
+
+msgctxt "#31302"
+msgid "SCC"
+msgstr "SCC"
+
+msgctxt "#31303"
+msgid "SC Community"
+msgstr "SC Community"
+
+msgctxt "#31304"
+msgid "Main menu"
+msgstr "Hlavní menu"
+
+msgctxt "#31305"
+msgid "To search"
+msgstr "Hledat"
+
+msgctxt "#31306"
+msgid "Searching history"
+msgstr "Historie hledání"
+
+msgctxt "#31307"
+msgid "Movie"
+msgstr "Filmy"
+
+msgctxt "#31308"
+msgid "TV Show"
+msgstr "Seriály"
+
+msgctxt "#31309"
+msgid "Concerts"
+msgstr "Koncerty"
+
+msgctxt "#31310"
+msgid "TV programm"
+msgstr "TV program"
+
+msgctxt "#31311"
+msgid "Filters"
+msgstr "Filtry"
+
+msgctxt "#31312"
+msgid "Trakt"
+msgstr "Trakt"
+
+msgctxt "#31313"
+msgid "Playing history"
+msgstr "Historie sledování"
+
+msgctxt "#31314"
+msgid "Download"
+msgstr "Stahování"
+
+msgctxt "#31315"
+msgid "Setting"
+msgstr "Nastavení"
+
+msgctxt "#31316"
+msgid "Library"
+msgstr "Knihovna"
+
+msgctxt "#31317"
+msgid "Trends"
+msgstr "Trendy"
+
+msgctxt "#31318"
+msgid "Populars"
+msgstr "Populární"
+
+msgctxt "#31319"
+msgid "Most wieved"
+msgstr "Nejsledovanější"
+
+msgctxt "#31320"
+msgid "News"
+msgstr "Novinky"
+
+msgctxt "#31321"
+msgid "News dubbed"
+msgstr "Novinky dabované"
+
+msgctxt "#31322"
+msgid "News with subtitle"
+msgstr "Novinky s vloženými titulky"
+
+msgctxt "#31323"
+msgid "Last added"
+msgstr "Poslední přidané"
+
+msgctxt "#31324"
+msgid "Today's TV tips (CSFD.cz)"
+msgstr "Dnešní TV tipy (ČSFD.cz)"

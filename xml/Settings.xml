@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<window>
+<window> <!-- MOD* -->
 	<defaultcontrol>9000</defaultcontrol>
 	<backgroundcolor>background</backgroundcolor>
 	<controls>
@@ -61,7 +61,7 @@
 					</item>
 				</content>
 			</control>
-			<control type="panel" id="9001">
+			<control type="panel" id="9001"> <!-- MOD* -->
 				<left>0</left>
 				<right>0</right>
 				<top>470</top>
@@ -115,7 +115,19 @@
 						<label>LibreELEC</label>
 						<onclick>RunAddon(service.libreelec.settings)</onclick>
 						<icon>icons/settings/libreelec.png</icon>
-						<visible>System.AddonIsEnabled(service.libreelec.settings)</visible>
+						<!-- <visible>System.AddonIsEnabled(service.libreelec.settings)</visible> -->
+					</item>
+					<item>
+						<label>CoreELEC</label> <!-- MOD+ -->
+						<onclick>RunAddon(service.coreelec.settings)</onclick>
+						<icon>icons/settings/coreelec.png</icon>
+						<!-- <visible>System.AddonIsEnabled(service.coreelec.settings)</visible> -->
+					</item>
+					<item>
+						<label>OpenELEC</label> <!-- MOD+ -->
+						<onclick>RunAddon(service.openelec.settings)</onclick>
+						<icon>icons/settings/openelec.png</icon>
+						<!-- <visible>System.AddonIsEnabled(service.openelec.settings)</visible> -->
 					</item>
 				</content>
 			</control>

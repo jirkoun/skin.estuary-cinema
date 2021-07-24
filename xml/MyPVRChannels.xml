@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<window>
+<window> <!-- MOD* -->
 	<defaultcontrol always="true">50</defaultcontrol>
 	<backgroundcolor>background</backgroundcolor>
-	<views>50,51</views>
+	<views>50,51, 52</views> <!-- MOD* add 52 -->
 	<menucontrol>9000</menucontrol>
 	<controls>
 		<include>DefaultBackground</include>
@@ -150,8 +150,168 @@
 						</control>
 					</focusedlayout>
 				</control>
+				<control type="group"> <!-- MOD+ -->
+					<control type="label">
+						<left>35</left>
+						<top>120</top>
+						<width>auto</width>
+						<height>65</height>
+						<label>$INFO[ListItem.ChannelNumberLabel,[B],[/B]]$INFO[ListItem.Label, [B],[/B]]$INFO[ListItem.StartTime, · , - ]$INFO[ListItem.EndTime]$INFO[ListItem.Title, · ]</label>
+						<font>font27</font>
+						<shadowcolor>text_shadow</shadowcolor>
+						<visible>Control.IsVisible(52)</visible>
+					</control>
+					<control type="panel" id="52"> <!-- EASY+ -->
+						<left>-40</left>
+						<top>150</top>
+						<right>0</right>
+						<bottom>0</bottom>
+						<onleft>9000</onleft>
+						<onright>74</onright>
+						<onup>52</onup>
+						<ondown>52</ondown>
+						<pagecontrol>74</pagecontrol>
+						<itemlayout width="310" height="350">
+							<control type="group">
+								<left>70</left>
+								<control type="image">
+									<width>319</width>
+									<height>340</height>
+									<texture>dialogs/dialog-bg-nobo.png</texture>
+									<bordertexture border="21">overlays/shadow.png</bordertexture>
+									<bordersize>20</bordersize>
+								</control>
+								<control type="image">
+									<top>43</top>
+									<left>38</left>
+									<width>245</width>
+									<height>200</height>
+									<texture fallback="icons/sidemenu/radio.png">$INFO[ListItem.Icon]</texture>
+									<aspectratio>keep</aspectratio>
+								</control>
+								<control type="label">
+									<left>42</left>
+									<top>247</top>
+									<width>245</width>
+									<height>70</height>
+									<wrapmultiline>true</wrapmultiline>
+									<label>$INFO[ListItem.Label]</label>
+									<font>font12</font>
+									<shadowcolor>text_shadow</shadowcolor>
+									<align>center</align>
+									<aligny>top</aligny>
+								</control>
+								<control type="label">
+									<left>42</left>
+									<top>277</top>
+									<width>245</width>
+									<height>65</height>
+									<label>$INFO[ListItem.Title]</label>
+									<font>font12</font>
+									<shadowcolor>text_shadow</shadowcolor>
+									<align>center</align>
+									<aligny>top</aligny>
+								</control>
+								<control type="image">
+									<left>260</left>
+									<top>30</top>
+									<width>32</width>
+									<height>32</height>
+									<texture>$VAR[WallWatchedIconVar]</texture>
+								</control>
+								<control type="progress">
+									<left>20</left>
+									<top>300</top>
+									<width>276</width>
+									<height>1</height>
+									<texturebg></texturebg>
+									<midtexture colordiffuse="button_focus" border="3">progress/texturebg_alt_white.png</midtexture>
+									<info>ListItem.Progress</info>
+									<visible>ListItem.HasEpg</visible>
+								</control>
+							</control>
+						</itemlayout>
+						<focusedlayout width="310" height="350">
+							<control type="group">
+								<depth>DepthContentPopout</depth>
+								<left>70</left>
+								<animation type="Focus">
+									<effect type="zoom" start="100" end="110" time="200" tween="sine" easing="inout" center="240,100" />
+								</animation>
+								<animation type="Unfocus">
+									<effect type="zoom" start="110" end="100" time="200" tween="sine" easing="inout" center="240,100" />
+								</animation>
+								<control type="image">
+									<width>319</width>
+									<height>340</height>
+									<texture>dialogs/dialog-bg-nobo.png</texture>
+									<bordertexture border="21">overlays/shadow.png</bordertexture>
+									<bordersize>20</bordersize>
+								</control>
+								<control type="image">
+									<width>319</width>
+									<height>340</height>
+									<texture colordiffuse="button_focus">colors/grey.png</texture>
+									<bordersize>20</bordersize>
+									<include>Animation_FocusTextureFade</include>
+								</control>
+								<control type="image">
+									<top>43</top>
+									<left>38</left>
+									<width>245</width>
+									<height>200</height>
+									<texture fallback="icons/sidemenu/radio.png">$INFO[ListItem.Icon]</texture>
+									<aspectratio>keep</aspectratio>
+								</control>
+								<control type="label">
+									<left>42</left>
+									<top>247</top>
+									<width>245</width>
+									<height>70</height>
+									<wrapmultiline>true</wrapmultiline>
+									<label>$INFO[ListItem.Label]</label>
+									<font>font12</font>
+									<shadowcolor>text_shadow</shadowcolor>
+									<align>center</align>
+									<scroll>true</scroll>
+									<aligny>top</aligny>
+								</control>
+								<control type="label">
+									<left>42</left>
+									<top>277</top>
+									<width>245</width>
+									<height>65</height>
+									<label>$INFO[ListItem.Title]</label>
+									<font>font12</font>
+									<shadowcolor>text_shadow</shadowcolor>
+									<align>center</align>
+									<scroll>true</scroll>
+									<aligny>top</aligny>
+								</control>
+								<control type="image">
+									<left>260</left>
+									<top>30</top>
+									<width>32</width>
+									<height>32</height>
+									<texture>$VAR[WallWatchedIconVar]</texture>
+								</control>
+								<control type="progress">
+									<left>20</left>
+									<top>300</top>
+									<width>276</width>
+									<height>1</height>
+									<texturebg></texturebg>
+									<midtexture colordiffuse="button_focus" border="3">progress/texturebg_alt_white.png</midtexture>
+									<info>ListItem.Progress</info>
+									<visible>ListItem.HasEpg</visible>
+								</control>
+							</control>
+						</focusedlayout>
+					</control>
+				</control>
 			</control>
-			<control type="group">
+			<control type="group"> <!-- MOD* -->
+				<visible>!Control.IsVisible(52)</visible> <!-- MOD+ -->
 				<depth>DepthContentPanel</depth>
 				<include>OpenClose_Right</include>
 				<width>870</width>
@@ -174,6 +334,17 @@
 				</control>
 				<include>PVRInfoPanel</include>
 			</control>
+			<control type="scrollbar" id="74"> <!-- MOD+ -->
+				<visible>Control.IsVisible(52)</visible>
+				<right>0</right>
+				<top>list_y_offset</top>
+				<width>12</width>
+				<bottom>list_y_offset</bottom>
+				<onleft>52</onleft>
+				<onright>52</onright>
+				<orientation>vertical</orientation>
+				<animation effect="slide" end="6,0" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(74)">conditional</animation>
+			</control>
 			<include content="TopBar">
 				<param name="breadcrumbs_label" value="$VAR[BreadcrumbsPVRChannelsVar]" />
 			</include>
@@ -186,7 +357,9 @@
 				<bottom>10</bottom>
 				<width>850</width>
 				<height>60</height>
-				<label>$VAR[PVRNextProgrammeLabel]</label>
+				<visible>!String.isempty(ListItem.NextTitle)</visible> <!-- MOD+ -->
+				<label>[COLOR grey]$LOCALIZE[19031][/COLOR]$INFO[ListItem.NextStartTime,: , - ]$INFO[ListItem.NextEndTime]$INFO[ListItem.NextTitle, · ]</label> <!-- MODx -->
+				<!-- <label>$VAR[PVRNextProgrammeLabel]</label> -->
 				<shadowcolor>black</shadowcolor>
 				<align>right</align>
 				<aligny>center</aligny>

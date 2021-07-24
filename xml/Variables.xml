@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<includes>
+<includes> <!-- MOD* -->
+	<variable name="MyPVRChannelsViewVar"> <!-- MOD+ -->
+		<value condition="Control.IsVisible(50)">$LOCALIZE[536]</value>
+		<value condition="Control.IsVisible(51)">$LOCALIZE[535]</value>
+		<value condition="Control.IsVisible(52)">$LOCALIZE[31102]</value>
+	</variable>
 	<variable name="PVRStatusImageVar">
 		<value condition="ListItem.IsRecording">windows/pvr/record.png</value>
 		<value condition="ListItem.HasTimer | ListItem.HasTimerSchedule">windows/pvr/timer.png</value>
